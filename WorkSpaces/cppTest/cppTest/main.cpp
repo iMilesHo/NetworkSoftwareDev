@@ -7,11 +7,22 @@
 
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    int i = 2;
-    int j = i + 1;
-    std::cout << "Hello, World!\n";
-    std::cout << "Hello, World2!\n";
+using namespace std;
+
+namespace myApp {
+    int value = 42;
+
+    void display() {
+        std::cout << "Value: " << value << std::endl;
+    }
+}
+
+
+using namespace myApp;
+
+int main() {
+    int value;
+    std::cout << "value: " << value << endl;
+    myApp::display();  // Accessing function from myApp namespace
     return 0;
 }
