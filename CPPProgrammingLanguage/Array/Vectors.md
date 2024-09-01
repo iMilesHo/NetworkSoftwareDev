@@ -17,7 +17,7 @@ test_scores.push_back(score_to_add); // add one more
 
 vector <vector<int>> movie_ratings {
         {1, 2, 3, 4},
-        {1, 2, 4, 4},
+        {1, 2, 4},
         {1, 3, 4, 5}
 };
 
@@ -33,4 +33,59 @@ vector <vector<int>> movie_ratings {
     cout << movie_ratings.at(0).at(2) << endl;
     cout << movie_ratings.at(0).at(3) << endl;
 
+```
+
+## Declaring and Initializing Vectors
+
+```cpp
+// one dimensional vector
+vector <char> vowels {'a', 'e', 'i', 'o', 'u'};
+
+// two dimensional vector
+vector <vector<int>> movie_rating {
+    {1, 2, 3, 4},
+    {1, 2, 4, 4},
+    {1, 3, 4, 5}
+};
+```
+
+## Accessing Elements and modifying Vector Elements
+
+```cpp
+// Accessing elements
+cout << vowels[0]; // a
+cout << vowels.at(0); // a
+
+cout << movie_rating[0][0]; // 1
+cout << movie_rating.at(0).at(0); // 1
+
+// Modifying elements
+vowels[0] = 'z';
+movie_rating.at(0).at(0) = 100;
+```
+
+## Adding Elements to a Vector
+
+```cpp
+// adding elements
+vowels.push_back('x');
+movie_rating.at(0).push_back(100);
+
+// adding a new row
+movie_rating.push_back({1, 2, 3, 4});
+```
+
+## removing elements from a vector
+
+```cpp
+// removing elements
+vowels.pop_back(); // removes the last element
+movie_rating.at(0).pop_back(); // removes the last element of the first row
+movie_rating.pop_back(); // removes the last row
+
+// removing all elements
+vowels.clear();
+
+// removing a element at a specific position
+vowels.erase(vowels.begin() + 1); // removes the second element
 ```
