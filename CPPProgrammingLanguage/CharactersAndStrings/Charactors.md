@@ -6,7 +6,6 @@
 #include <cctype>
 
 // function_name(char)
-
 ```
 
 - Functions for testing characters
