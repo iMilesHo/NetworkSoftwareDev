@@ -37,13 +37,7 @@ Setting up a proper development environment is crucial for learning and practici
   1. Install GCC: `sudo apt install build-essential`.
   2. Verify installation: `gcc --version`.
 
-**4. VSCode + Remote SSH**
-
-- **Purpose**: Use VSCode on your host machine to remotely develop on the Ubuntu VM.
-- **Setup**:
-  1. Install Visual Studio Code on your host machine.
-  2. Install the Remote SSH extension from the VSCode marketplace.
-  3. Connect to your Ubuntu VM via VSCode using the Remote SSH extension.
+**4. Clion (Jetbrain Gateway, click the ssh in the clion welcome page) + Remote SSH**
 
 **Conclusion**
 With VMware virtualization, Ubuntu Linux, Samba file sharing, secure SSH access, the GCC compiler, and VSCode with Remote SSH, you've built a robust, flexible, and efficient C/C++ development environment. This setup not only supports a wide range of development activities but also ensures that your projects are portable and your environment is easily replicable.
